@@ -1,0 +1,47 @@
+print("Welcome to Santa's Workshop!")
+print()
+#instructions
+print("Answer these questions with your friends or siblings!")
+print("When you're all done answering, type DONE when asked naughty/nice")
+print()
+#list of popular gifts
+print("To give you some ideas, here are some popular gifts this year:")
+list = ["Disney Plus" , "Airpod Pros" , "PS5" , "Iphone 12"]
+print(list[0])
+print(list[1])
+print(list[2])
+print(list[3])
+print()
+#asking if they were naughty or nice 
+name = input("What is your name?")
+naughty = input(str(name) + " , were you naughty or nice this year? ")
+#definining operations
+def multiply(x, y):
+    return x * y
+#if the person is naughty
+if naughty == ("naughty"):
+    print("Thanks for being honest, but no gifts for you this year.") 
+#while loop for if they are nice
+while naughty == ("nice"):
+#asking how many presents they want for christmas
+    presents = int(input("How many items are on your Christmas list? "))
+#if they want less than 10 presents, assign 1 elf per presents
+#if they want between 10 and 50, assign 2 elves per present
+#if they want more than 50, assign 5 elves per presents
+    if presents < 10:
+        presents == input
+    elif presents >= 10 and presents <= 50:
+        presents = multiply (presents, 2)
+    elif presents > 50:
+        presents = multiply (presents, 5)
+    elif presents == 0:
+        presents == 0
+    else:
+        print("Ho ho ho, error.")
+#printing the number of elves needed
+    print("We are sending " + str(presents) + " elves to work on your presents, " + str(name))
+    name = input("What is your name?")
+    naughty = input(str(name) + " , were you naughty or nice this year? ")
+    if naughty == ("naughty"):
+        print("Thanks for being honest, but no gifts for you this year.")
+print("We'll let Santa know. Have a Merry Christmas!")
